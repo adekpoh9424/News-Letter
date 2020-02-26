@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 5px;
+  padding: 5px;
+  background: #2c3531;
+  color: #fff;
+}
+
+.info-email {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  color: #fff;
+  background: gray;
+  width: 35px;
+  padding: 9px;
+  font-size: 25px;
+}
+
+.circle-info {
+  position: relative;
+  left: 70px;
+  font-size: 20px;
+  margin-top: -45px;
+}
+
+.my-email {
+  margin-bottom: 40px;
+}
+
+.my-email {
+  left: 70px;
+  position: relative;
+}
+
+.date-1 {
+  float: right;
+  margin-top: -40px;
+}
+
+.header {
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+
+.earn {
+  position: relative;
+  left: 25px;
+}
+
+span {
+  color: rgb(241, 56, 56);
+}
+
+.fab {
+  color: rgb(241, 56, 56);
+  font-size: 30px;
+  position: relative;
+  left: 70px;
+}
+
+.color-change {
+  position: relative;
+  left: 100px;
+  color: rgb(241, 56, 56);
+  margin-top: -30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 90%;
+  height: 500px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 38px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  left: 60px;
+  color: rgb(241, 56, 56);
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+button {
+  padding: 15px;
+  width: 35%;
+  border-radius: 10px;
+  background-color: rgb(241, 56, 56);
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  left: 330px;
+  margin-top: 60px;
+}
+
+.my-address {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.address {
+  font-size: 8px;
+  font-weight: normal;
+  margin-top: 35px;
+}
+.green {
+  color: green;
+}
+
+.margin {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subscribe {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 700px) {
+  button {
+    position: relative;
+    left: 260px;
+    width: 30%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .margin {
+    text-align: left;
+  }
+
+  .head-tag {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    position: relative;
+    left: 260px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+  .circle {
+    border-radius: 50%;
+    color: #fff;
+    background: gray;
+    width: 20px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .circle-info {
+    position: relative;
+    left: 45px;
+    font-size: 15px;
+    margin-top: -45px;
+  }
+
+  .my-email {
+    left: 45px;
+    position: relative;
+    font-size: 12px;
+  }
+
+  .earn {
+    font-size: 20px;
+    left: 2px;
+  }
+
+  .fab {
+    color: rgb(241, 56, 56);
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+  }
+  .color-change {
+    left: 70px;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .head-tag {
+    font-size: 25px;
+    left: 3px;
+  }
+
+  button {
+    position: relative;
+    left: 60px;
+    width: 60%;
+    padding: 15px;
+  }
+  .margin {
+    text-align: center;
+  }
+}
