@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0 0;
+  margin: 0 0;
   text-decoration: none;
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -81,6 +81,7 @@ span {
 img {
   width: 90%;
   height: 500px;
+  object-fit: cover;
 }
 
 .center {
@@ -99,25 +100,86 @@ h2 {
 }
 
 p {
-  text-align: center;
   font-size: 25px;
+  left: 60px;
+  position: relative;
 }
 
 button {
   padding: 15px;
-  width: 35%;
+  width: 20%;
   border-radius: 10px;
   background-color: rgb(241, 56, 56);
   color: #fff;
   font-size: 20px;
   position: relative;
-  left: 330px;
+  left: 190px;
   margin-top: 60px;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background: none;
+  border: 1px solid rgb(241, 56, 56);
+  color: #ccc;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgb(255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover {
+  background: rgb(241, 56, 56);
+  cursor: pointer;
+}
+
+button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.1;
+  transition: 0.7s;
 }
 
 .my-address {
   margin-top: 25px;
   margin-bottom: 25px;
+  position: relative;
+  left: 50px;
 }
 .address {
   font-size: 8px;
@@ -131,17 +193,18 @@ button {
 .margin {
   margin-top: 40px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .subscribe {
   margin-bottom: 45px;
+  left: 50px;
+  position: relative;
 }
 
 @media (max-width: 700px) {
   button {
+    margin-left: 8px;
     position: relative;
-    left: 260px;
     width: 30%;
   }
 
@@ -150,7 +213,7 @@ button {
   }
 
   .margin {
-    text-align: left;
+    font-size: 5px;
   }
 
   .head-tag {
@@ -161,8 +224,14 @@ button {
 @media (max-width: 768px) {
   button {
     position: relative;
-    left: 260px;
+    left: 170px;
     width: 30%;
+  }
+  p {
+    font-size: 20px;
+  }
+  .margin {
+    font-size: 18px;
   }
 }
 
@@ -208,19 +277,32 @@ button {
     width: 100%;
     height: 200px;
   }
+  .center {
+    display: block;
+    text-align: center;
+  }
 
   .head-tag {
     font-size: 25px;
     left: 3px;
   }
 
-  button {
-    position: relative;
-    left: 60px;
-    width: 60%;
-    padding: 15px;
+  .my-p,
+  .my-div {
+    margin: 70px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  p {
+    margin-left: -50px !important;
+    padding: 10px;
   }
   .margin {
-    text-align: center;
+    margin-left: -50px !important;
+  }
+  button {
+    width: 100%;
+    margin-left: 90px;
   }
 }
